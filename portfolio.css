@@ -1,0 +1,701 @@
+/* All your CSS from above — it's the same, just copy and paste */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+   font-family:cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+
+}
+
+/* ...rest of the CSS rules... */
+/* (Copy the full CSS block from your original HTML file) */
+body {
+ /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=e7ff01&c2=ffae01&gt=c&gd=dtl
+*/
+background: #E7FF01;
+ background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  color: #000000;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #d9d9d9;
+  border-top: none;
+} /* Header styles */
+.header {
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=e7ff01&c2=ffae01&gt=c&gd=dtl
+*/
+background: #E7FF01;
+ background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  /* background-image: url(./57756.png); */
+  color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header-content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  
+  letter-spacing: -2px;
+  color: #4f4f4f;
+  
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  border-radius: 2px;
+}
+
+.nav-menu li {
+  margin-left: 15px;
+  font-size: 18px;
+  color: #d9d9d9;
+  position: relative; /* Required for absolute positioning of ::after */
+}
+
+.nav-menu li:not(:hover) {
+  opacity: 0.7;
+}
+
+.nav-menu li:hover {
+  opacity: 1;
+  color: #000000;
+}
+
+/* Anchor styles */
+.nav-menu a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: cursive;
+  /* font-size: 20px; */
+  position: relative; /* For ::after */
+  padding-bottom: 5px;
+}
+
+/* Underline animation using ::after */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+
+.search-content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  padding: 15px;
+  border: 1px dashed black;
+ /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=e7ff01&c2=ffae01&gt=c&gd=dtl
+*/
+ background: linear-gradient(to bottom, #7f7f7f, #4a4a4a, #606060);
+
+}
+.sidebar {
+  width: 180px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.sidebar-menu {
+  background: white;
+  border: 1px dashed #000000;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 5px black;
+}
+.sidebar-menu h3 {
+  background: #f2f2f2;
+  font-size: 17px;
+  padding: 5px 10px;
+  border-bottom: 1px dashed black;
+  color: #000000;
+}
+.sidebar-menu ul {
+  list-style: none;
+}
+.sidebar-menu li {
+  border-bottom: 1px dashed #000000;
+}
+.sidebar-menu a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  font-size: 13px;
+  
+  padding: 5px 10px;
+}
+.sidebar-menu a:hover {
+  background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  /* text-decoration: underline; */
+}
+.profile-content {
+  flex-grow: 1;
+}
+.profile-header {
+  background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  border: 1px dashed #000000;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 5px black;
+}
+.profile-top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  justify-content: space-around;
+}
+.profile-summary {
+  
+
+   border: 1px solid black;
+   padding: 10px;
+   border-radius: 10px;
+ 
+}
+.profile-info{
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.overlay{
+    position: absolute;
+    color: #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+    top: 5px;
+    
+   
+
+
+}
+
+/* .profile-info {
+  flex-grow: 1;
+} */
+.profile-info h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: black;
+  font-weight: bold;
+}
+.action-buttons {
+  margin: 10px 0;
+}
+.btn {
+   background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  border:  #000000;
+  padding: 3px 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 12px;
+  border: double;
+}
+.btn:hover{
+   background: linear-gradient(to bottom, #e0e0e0, #a0a0a0, #606060);
+ 
+}
+.a{
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+   background: linear-gradient(to bottom, #e0e0e0, #a0a0a0, #606060);
+  
+}
+.btn-primary {
+  background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  
+  color: rgb(0, 0, 0);
+
+  border: double ;
+}
+.btn-primary:hover{
+  background: linear-gradient(to bottom, #e0e0e0, #a0a0a0, #606060);
+  
+  color: rgb(0, 0, 0);
+
+  border: double ;
+}
+.connection-info {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 3px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 10px;
+} 
+.connection-info>h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.portfolio-section {
+  background: white;
+  border: 1px dashed #000000;
+  margin-bottom: 15px;
+}
+.portfolio-section h2 {
+  background: #f2f2f2;
+  font-size: 13px;
+  padding: 5px 10px;
+ border: 1px dashed #000000;
+  color: #000000;
+}
+.portfolio-content {
+  padding: 15px;
+  background: linear-gradient(to bottom, #e0e0e0, #a0a0a0, #606060);
+  box-shadow: 5px 5px 5px black;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.portfolio-item {
+ border: 1px dashed #000000;
+  padding: 10px;
+ background: linear-gradient(to bottom, #e0e0e0, #a0a0a0, #606060);
+}
+.portfolio-image1 {
+  height: 200px;
+  background: #e9e9e9;
+  background-image: url(./netflixproject.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 8px;
+  font-size: 13px;
+  border: 1px solid #d9d9d9;
+}
+.certificate-section {
+  background: white;
+  border: 1px dashed #000000;
+  margin-bottom: 15px;
+}
+.certificate-section h2 {
+  background: #f2f2f2;
+  font-size: 13px;
+  padding: 5px 10px;
+ border: 1px dashed #000000;
+  color: #000000;
+}
+.certificate-content {
+  padding: 15px;
+  background: linear-gradient(to bottom, #e0e0e0, #a0a0a0, #606060);
+  box-shadow: 5px 5px 5px black;
+}
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.certificate-item {
+ border: 1px dashed #000000;
+  padding: 10px;
+ background: linear-gradient(to bottom, #e0e0e0, #a0a0a0, #606060);
+}
+.certificate-image1 {
+  height: 200px;
+  background: #e9e9e9;
+  background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 8px;
+  font-size: 12px;
+  border: 1px solid #d9d9d9;
+}
+.certificate-image2 {
+  height: 200px;
+  background: #e9e9e9;
+  background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 8px;
+  font-size: 12px;
+  border: 1px solid #d9d9d9;
+}
+
+
+
+.portfolio-image4 {
+  height: 200px;
+  background: #e9e9e9;
+  background-image: url(./studentform.jpg);
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 8px;
+  font-size: 12px;
+  border: 1px solid #d9d9d9;
+}
+
+.info-section {
+ background: linear-gradient(to bottom, #e0e0e0, #a0a0a0, #606060);
+  border: 1px dashed black;
+  box-shadow: 5px 5px 5px black;
+}
+.info-section h2 {
+  background: #f2f2f2;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-bottom: 1px dashed black;
+  color: #000000;
+}
+.info-content {
+  padding: 2px;
+  
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+  
+
+}
+.info-item h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 3px;
+/
+}
+.info-item p {
+  font-size: 13px;
+  margin-bottom: 8px;
+   /* border-bottom: 1px solid black; */
+} /* Footer */
+.footer {
+  background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  border-top: 1px dashed #000000;
+  padding: 10px 15px;
+  text-align: center;
+  color: #000000;
+  font-size: 11px;
+}
+.footer-links {
+  margin-bottom: 5px;
+}
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo{
+
+    font-size: 25px;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: right;
+  }
+
+  .search-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+ 
+
+  .main-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    margin: 0 0 10px 0;
+    width: 250px;
+    height: 250px;
+  }
+  .profile-pic:hover {
+    margin: 15px 0 10px 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-info h1 {
+    text-align: center;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* one column on small screens */
+  }
+  .certificate-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate-pic {
+    margin: 0 0 10px 0;
+  }
+
+  .certificate-info h1 {
+    text-align: center;
+  }
+
+  .certificate-grid {
+    grid-template-columns: 1fr; /* one column on small screens */
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn-primary {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(45deg, 
+  rgba(174, 134, 37, 0.7), 
+  rgba(247, 239, 138, 0.7), 
+  rgba(210, 172, 71, 0.7), 
+  rgba(237, 201, 103, 0.7)
+);
+
+    position: absolute;
+    top: 60px; /* Adjust depending on your header height */
+    right: 0;
+    z-index: 1;
+    /* gap: 5px; */
+    border-top: 1px solid #ccc;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: flex-end;
+     /* width: 100%; */
+   
+    
+   
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+    font-size: small;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Page entrance animation */
+.header,
+.main-content,
+.footer {
+  animation: fadeInUp 1s ease-in-out forwards;
+  opacity: 0; /* Start hidden, shown by animation */
+}
+
+/* Delay for each section */
+
+
+.main-content {
+  animation-delay: 0.4s;
+}
+
+.footer {
+  animation-delay: 0.6s;
+}
+.portfolio-item {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+.certificate-item {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* You can control the delay using nth-child */
+.portfolio-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.portfolio-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.portfolio-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.portfolio-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.portfolio-item {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+.certificate-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.certificate-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.certificate-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.certificate-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.certificate-item {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+.portfolio-image1,
+.portfolio-image2,
+.portfolio-image3,
+.portfolio-image4 {
+  transition: transform 0.3s ease;
+}
+.certificate-image1,
+.certificate-image2 {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-image1:hover,
+.portfolio-image2:hover,
+.portfolio-image3:hover,
+.portfolio-image4:hover {
+  transform: scale(1.01);
+  z-index: 2;
+}
+.certificate-image1:hover,
+.certificate-image2:hover{
+  transform: scale(1.01);
+  z-index: 2;
+}
