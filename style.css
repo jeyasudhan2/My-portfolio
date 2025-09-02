@@ -56,13 +56,16 @@ background: #E7FF01;
   align-items: center;
  
 }
-.logo {
+.logo>a{
   font-size: 40px;
   font-weight: bold;
-  
   letter-spacing: -2px;
   color: #4f4f4f;
+  cursor: pointer;
   
+  list-style: none;
+  text-decoration: none;
+  color: #4f4f4f;
 }
 .nav-menu {
   display: flex;
@@ -136,6 +139,7 @@ background: #E7FF01;
   width: 180px;
   flex-shrink: 0;
   margin-right: 20px;
+ 
 }
 .sidebar-menu {
   background: white;
@@ -152,6 +156,7 @@ background: #E7FF01;
 }
 .sidebar-menu ul {
   list-style: none;
+   
 }
 .sidebar-menu li {
   border-bottom: 1px dashed #000000;
@@ -161,11 +166,13 @@ background: #E7FF01;
   color: #000000;
   text-decoration: none;
   font-size: 13px;
+  cursor: auto;
   
   padding: 5px 10px;
 }
 .sidebar-menu a:hover {
   background: linear-gradient(45deg, #AE8625, #F7EF8A, #D2AC47, #EDC967);
+  
   /* text-decoration: underline; */
 }
 .profile-content {
@@ -268,6 +275,7 @@ background: #E7FF01;
   border: 1px solid black;
   text-align: center;
   border-radius: 10px;
+  padding: 10px;
 } 
 .connection-info>h1{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -486,16 +494,7 @@ background: #E7FF01;
     align-items: center;
   }
 
-  .profile-pic {
-    margin: 0 0 10px 0;
-    width: 250px;
-    height: 250px;
-  }
-  .profile-pic:hover {
-    margin: 15px 0 10px 0;
-    width: 250px;
-    height: 250px;
-  }
+  
 
   .profile-info h1 {
     text-align: center;
