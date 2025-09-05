@@ -276,9 +276,9 @@ background: #E7FF01;
   border-radius: 10px;
   padding: 10px;
 } 
-.connection-info>h1{
-  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
-}
+/* .connection-info>h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+} */
 
 .portfolio-section {
   background: white;
